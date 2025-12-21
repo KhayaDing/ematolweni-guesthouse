@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMatolweni Guesthouse</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="brownlogo.png" type="image/png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="logo-area">
+        <img src="brownlogo.png" alt="EMatolweni Logo" class="logo-image" />
+        <div class="logo-text">
+          <span class="brand-title">EMatolweni</span>
+          <span class="brand-subtitle">Guesthouse</span>
+        </div>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#amenities">Amenities</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank">Rates & Availability</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+27785926801" class="btn-outline">Call</a>
+        <a href="https://book.nightsbridge.com/38989" target="_blank" class="btn-primary header-book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <section id="hero" class="hero">
+      <div class="hero-slider">
+        <div class="hero-slide active" data-slide="1">
+          <div class="hero-overlay"></div>
+          <img src="images/790427993.jpg" alt="Luxury accommodation bedroom" class="hero-image" />
+          <div class="hero-content">
+            <p class="hero-kicker">WELCOME TO</p>
+            <h1>EMatolweni Guesthouse</h1>
+            <p class="hero-subtitle">Experience refined comfort, modern amenities, and warm South African hospitality in
+              Kimberley.</p>
+            <div class="hero-buttons">
+              <a href="https://book.nightsbridge.com/38989" target="_blank" class="btn-primary">Book Your Stay</a>
+              <a href="#about" class="btn-ghost">Discover More</a>
+            </div>
+            <div class="hero-amenities">
+              <span class="hero-amenity-pill"><i class="fas fa-bolt"></i> No Load Shedding</span>
+              <span class="hero-amenity-pill"><i class="fas fa-wifi"></i> Free WiFi</span>
+              <span class="hero-amenity-pill"><i class="fas fa-shield-alt"></i> Secure Parking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" data-slide="2">
+          <div class="hero-overlay"></div>
+          <img src="images/790428213.jpg" alt="Guesthouse lounge" class="hero-image" />
+          <div class="hero-content">
+            <p class="hero-kicker">COMFORT & CONVENIENCE</p>
+            <h1>Stay in the Heart of Kimberley</h1>
+            <p class="hero-subtitle">
+              Enjoy our modern rooms, backup water systems, and exceptional personalized service.
+            </p>
+            <div class="hero-buttons">
+              <a href="https://book.nightsbridge.com/38989" target="_blank" class="btn-primary">Book Your Stay</a>
+              <a href="#about" class="btn-ghost">Discover More</a>
+            </div>
+            <div class="hero-amenities">
+              <span class="hero-amenity-pill"><i class="fas fa-faucet"></i> Backup Water</span>
+              <span class="hero-amenity-pill"><i class="fas fa-snowflake"></i> Air Conditioning</span>
+              <span class="hero-amenity-pill"><i class="fas fa-tv"></i> Smart TV</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" data-slide="3">
+          <div class="hero-overlay"></div>
+          <img src="images/790428617.jpg" alt="Serene Atmosphere" class="hero-image" />
+          <div class="hero-content">
+            <p class="hero-kicker">PEACEFUL RETREAT</p>
+            <h1>Experience African Elegance</h1>
+            <p class="hero-subtitle">
+              Relax in our secure, family-friendly environment designed for your ultimate peace of mind.
+            </p>
+            <div class="hero-buttons">
+              <a href="https://book.nightsbridge.com/38989" target="_blank" class="btn-primary">Book Your Stay</a>
+              <a href="#about" class="btn-ghost">Discover More</a>
+            </div>
+            <div class="hero-amenities">
+              <span class="hero-amenity-pill"><i class="fas fa-user-friends"></i> Family Friendly</span>
+              <span class="hero-amenity-pill"><i class="fas fa-bath"></i> En-suite Bathrooms</span>
+              <span class="hero-amenity-pill"><i class="fas fa-utensils"></i> Self Catering</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+          &#10095;
+        </button>
+
+        <div class="hero-dots">
+          <button class="hero-dot active" data-target="1"></button>
+          <button class="hero-dot" data-target="2"></button>
+          <button class="hero-dot" data-target="3"></button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <!-- Video/Image Showcase Component -->
+        <div class="video-container">
+          <!-- Badge -->
+          <div class="hosting-badge">
+            1 YEAR + HOSTING
+          </div>
+
+          <!-- Main Video/Image -->
+          <div class="main-media">
+            <video width="100%" height="100%" autoplay muted loop playsinline preload="metadata"
+              style="object-fit: cover;">
+              <source src="images/grok-video-7578393e-347a-49cd-9afd-cc7dbe9c80cd.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Overlapping Secondary Image -->
+          <div class="secondary-media">
+            <img src="images/790428781.jpg" alt="Interior Detail" loading="lazy" />
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>About EMatolweni Guesthouse</h2>
+          <p class="lead">
+            Welcome to EMatolweni Guesthouse, your premier destination for
+            luxury accommodation in the heart of Kimberley, South Africa.
+            Our guesthouse seamlessly blends African elegance with modern
+            comfort, creating an unforgettable hospitality experience.
+          </p>
+          <p>
+            Whether you are visiting for business or pleasure, our dedicated
+            team ensures your stay is comfortable, secure, and memorable,
+            offering personalized service that reflects the warmth of African
+            hospitality.
+          </p>
+          <ul class="about-list">
+            <li>Centrally located in Kimberley</li>
+            <li>No Load Shedding (Mining Grid)</li>
+            <li>Water Tank Backup System</li>
+            <li>Secure Gated Property & ADT</li>
+            <li>Family-Owned & Managed</li>
+            <li>Budget-Friendly to Mid-Range</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="section why-choose">
+      <div class="container">
+        <header class="section-header">
+          <h2>Why Choose Ematolweni</h2>
+          <p>Experience the difference with our premium features designed for your comfort.</p>
+        </header>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>No Load Shedding</h3>
+            <p>We are situated on a mining grid, ensuring uninterrupted power supply 24/7.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-faucet"></i>
+            </div>
+            <h3>Backup Water</h3>
+            <p>Continuous water supply available, so your comfort is never compromised.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <h3>Secure Parking</h3>
+            <p>Complimentary, secure on-site parking available 24/7 for peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="amenities" class="section amenities">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Amenities</h2>
+          <p>
+            Enjoy a range of premium amenities designed to make your stay
+            comfortable, convenient, and stress-free.
+          </p>
+        </header>
+
+        <div class="amenities-grid">
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/free-wifi.png" alt="Free High-Speed WiFi" />
+
+            </div>
+            <div class="service-body">
+              <h3>Free High-Speed WiFi</h3>
+              <p>
+                Stay connected with complimentary high-speed WiFi available
+                throughout the property, perfect for work or streaming.
+              </p>
+            </div>
+          </article>
+
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/smart-tv.png" alt="Smart TV entertainment" />
+            </div>
+            <div class="service-body">
+              <h3>Smart TV & Entertainment</h3>
+              <p>
+                Relax in your room with a Smart TV, offering access to your
+                favorite streaming services and entertainment channels.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/kitchenette.png" alt="Self-catering and climate control" />
+            </div>
+            <div class="service-body">
+              <h3>Self-Catering & Climate Control</h3>
+              <p>
+                Each room features a mini kitchen with basic utensils, plus air conditioning and heating for your
+                personalized comfort.
+              </p>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section-header">
+          <h2>Get In Touch</h2>
+          <p>
+            We would love to hear from you. Send us a message and we will
+            respond as soon as possible.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+27 785 926 801</span>
+              </li>
+              <li>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">info@ematolweniguesthouse.co.za</span>
+              </li>
+              <li>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">56 Boshof Road, Ernestville, Kimberley, Northern Cape, 8301</span>
+              </li>
+            </ul>
+            <div class="map-placeholder">
+              <iframe title="EMatolweni Location"
+                src="https://maps.google.com/maps?q=56+Boshof+Road,+Ernestville,+Kimberley,+Northern+Cape,+8301&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 123 456 789" />
+              </div>
+              <div class="form-field">
+                <label for="guestType">Guest Type *</label>
+                <select id="guestType" name="guestType">
+                  <option value="">Select your guest type</option>
+                  <option>Business</option>
+                  <option>Leisure</option>
+                  <option>Group</option>
+                  <option>Family</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Tell us about your booking requirements or any questions you have..."></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary full-width">
+                Send Message
+              </button>
+            </div>
+            <div id="form-success" class="form-success" style="display: none;">
+              Thank you! Your message has been sent successfully. We'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    </section>
+
+
+
+    <!-- Area Attractions -->
+    <section id="attractions" class="section bg-white">
+      <div class="container">
+        <header class="section-header">
+          <h2>Area Attractions</h2>
+          <p>Explore the best of Kimberley during your stay.</p>
+        </header>
+        <div class="amenities-grid"> <!-- Reuse grid for ease -->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/the-big-hole.png" alt="The Big Hole" loading="lazy" />
+            </div>
+            <div class="service-body">
+              <h3>The Big Hole</h3>
+              <p>World-famous open-pit mine and museum.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/mokala-park.png" alt="Mokala National Park" loading="lazy" />
+            </div>
+            <div class="service-body">
+              <h3>Mokala National Park</h3>
+              <p>Wildlife reserve protecting endangered species.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="images/mine-museum.png" alt="Kimberley Mine Museum" loading="lazy" />
+            </div>
+            <div class="service-body">
+              <h3>Kimberley Mine Museum</h3>
+              <p>Discover the history of the diamond rush.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-column">
+        <div class="logo-area footer-logo">
+          <img src="trans-logo.png" alt="EMatolweni Logo" class="logo-image" loading="lazy" />
+          <div class="logo-text">
+            <span class="brand-title">EMatolweni</span>
+            <span class="brand-subtitle">Guesthouse</span>
+          </div>
+        </div>
+        <p class="footer-description">
+          Experience luxury accommodation infused with African charm in the
+          heart of Kimberley.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html#amenities">Amenities</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank">Rates & Availability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li>+27 785 926 801</li>
+          <li>info@ematolweniguesthouse.co.za</li>
+          <li>56 Boshof Road, Ernestville,<br />Kimberley, Northern Cape, 8301</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>
+          &copy; 2025 EMatolweni Guesthouse. All Rights Reserved. Website
+          designed by <a href="https://khaya-dingindlela-portfolio.netlify.app/" target="_blank"
+            rel="noopener noreferrer" class="footer-credit">Khaya Dingindlela</a>
+        </p>
+        <p>Call: +27 785 926 801</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27780677764" class="whatsapp-float" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon-img"
+      loading="lazy" />
+  </a>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

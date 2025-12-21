@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - EMatolweni Guesthouse</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="brownlogo.png" type="image/png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="logo-area">
+                <img src="brownlogo.png" alt="EMatolweni Logo" class="logo-image" />
+                <div class="logo-text">
+                    <span class="brand-title">EMatolweni</span>
+                    <span class="brand-subtitle">Guesthouse</span>
+                </div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="index.html#amenities">Amenities</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank">Rates & Availability</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+27785926801" class="btn-outline">Call</a>
+                <a href="https://book.nightsbridge.com/38989" target="_blank" class="btn-primary header-book-btn">Book
+                    Now</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Our Gallery</h1>
+                <p class="hero-subtitle">A glimpse into the comfort and beauty of EMatolweni</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section bg-cream">
+            <div class="container">
+                <div class="gallery-masonry">
+                    <!-- Column 1 -->
+                    <div class="gallery-card" onclick="openImageModal('images/exterior-cju5ntfc-1.jpg')">
+                        <img src="images/exterior-cju5ntfc-1.jpg" alt="Exterior View">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/room-1-bkbj-vsf.jpg')">
+                        <img src="images/room-1-bkbj-vsf.jpg" alt="Room Interior">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openImageModal('images/room-2-bvjitwrr-1.jpg')">
+                        <img src="images/room-2-bvjitwrr-1.jpg" alt="Room Interior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="gallery-card" onclick="openImageModal('images/room-3-8d8-tn4p-1.jpg')">
+                        <img src="images/room-3-8d8-tn4p-1.jpg" alt="Room Interior">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/room-4-dmsok5ng-1.jpg')">
+                        <img src="images/room-4-dmsok5ng-1.jpg" alt="Room Interior">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0023-1.jpg')">
+                        <img src="images/img-20251209-wa0023-1.jpg" alt="Guesthouse Detail">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0024-1.jpg')">
+                        <img src="images/img-20251209-wa0024-1.jpg" alt="Guesthouse Detail">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="gallery-card" onclick="openImageModal('images/room-5-dsjb7zw6-1.jpg')">
+                        <img src="images/room-5-dsjb7zw6-1.jpg" alt="Room Interior">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openImageModal('images/room-6-datd-fjj.jpg')">
+                        <img src="images/room-6-datd-fjj.jpg" alt="Room Interior">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0025-1.jpg')">
+                        <img src="images/img-20251209-wa0025-1.jpg" alt="Guesthouse Detail">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0027-1.jpg')">
+                        <img src="images/img-20251209-wa0027-1.jpg" alt="Guesthouse Detail">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0030-1.jpg')">
+                        <img src="images/img-20251209-wa0030-1.jpg" alt="Guesthouse Detail">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <!-- New Added Images -->
+                    <div class="gallery-card" onclick="openImageModal('images/790042590.jpg')">
+                        <img src="images/790042590.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790042592.jpg')">
+                        <img src="images/790042592.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790042593.jpg')">
+                        <img src="images/790042593.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790427949.jpg')">
+                        <img src="images/790427949.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790427993.jpg')">
+                        <img src="images/790427993.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428144.jpg')">
+                        <img src="images/790428144.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428213.jpg')">
+                        <img src="images/790428213.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428338.jpg')">
+                        <img src="images/790428338.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428617.jpg')">
+                        <img src="images/790428617.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428642.jpg')">
+                        <img src="images/790428642.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428675.jpg')">
+                        <img src="images/790428675.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428712.jpg')">
+                        <img src="images/790428712.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428750.jpg')">
+                        <img src="images/790428750.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428781.jpg')">
+                        <img src="images/790428781.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428815.jpg')">
+                        <img src="images/790428815.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428850.jpg')">
+                        <img src="images/790428850.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428913.jpg')">
+                        <img src="images/790428913.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="gallery-card" onclick="openImageModal('images/790428963.jpg')">
+                        <img src="images/790428963.jpg" alt="Gallery Image">
+                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-column">
+                <div class="logo-area footer-logo">
+                    <img src="trans-logo.png" alt="EMatolweni Logo" class="logo-image" />
+                    <div class="logo-text">
+                        <span class="brand-title">EMatolweni</span>
+                        <span class="brand-subtitle">Guesthouse</span>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Experience luxury accommodation infused with African charm in the
+                    heart of Kimberley.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#amenities">Amenities</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank">Rates & Availability</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>+27 785 926 801</li>
+                    <li>info@ematolweniguesthouse.co.za</li>
+                    <li>56 Boshof Road, Ernestville,<br />Kimberley, Northern Cape, 8301</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>
+                    &copy; 2025 EMatolweni Guesthouse. All Rights Reserved. Website
+                    designed by <a href="https://khaya-dingindlela-portfolio.netlify.app/" target="_blank"
+                        rel="noopener noreferrer" class="footer-credit">Khaya Dingindlela</a>
+                </p>
+                <p>Call: +27 785 926 801</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced Lightbox Modal -->
+    <div id="imageModal" class="modal" aria-hidden="true">
+        <span class="close-modal" aria-label="Close">&times;</span>
+        <button class="lightbox-nav prev" aria-label="Previous Image">&#10094;</button>
+        <button class="lightbox-nav next" aria-label="Next Image">&#10095;</button>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="img01" alt="Gallery View">
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
