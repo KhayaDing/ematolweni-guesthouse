@@ -16,11 +16,14 @@
     margin: 4rem auto 0;
 }
 
-.gallery-section:last-child::after,
+/* Remove separator from the last gallery section */
 .gallery-section:last-child {
-    display: none;
-    margin-bottom: 0;
     border-bottom: none;
+    margin-bottom: 0;
+}
+
+.gallery-section:last-child::after {
+    display: none;
 }
 
 /* Fix for the last child issue - simply removing the separator */
