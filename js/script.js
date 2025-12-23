@@ -246,3 +246,46 @@ if (contactForm) {
     }
   });
 }
+
+// Gallery ScrollSpy and Sticky Nav Logic
+const gallerySections = document.querySelectorAll(".gallery-section");
+const galleryNavLinks = document.querySelectorAll(".gallery-nav-link");
+const galleryNavInner = document.querySelector(".gallery-nav-inner");
+
+if (gallerySections.length > 0 && galleryNavLinks.length > 0) {
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    // Offset for header (80px) and nav bar (approx 60-80px) plus some breathing room
+    // Use a slightly larger offset to activate the section earlier as it approaches top
+    const navHeight = 160;
+
+    gallerySections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      // If we have scrolled past the top of the section (minus offset)
+      if (window.scrollY >= sectionTop - navHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    // If we are at the bottom of the page, highlight the last one
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+      if (gallerySections.length > 0) {
+        current = gallerySections[gallerySections.length - 1].getAttribute("id");
+      }
+    }
+
+    galleryNavLinks.forEach((link) => {
+      link.classList.remove("active");
+      // Check if href matches current id (href="#id")
+      if (current && link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+
+        // Auto-scroll the nav bar on mobile to keep active item in view
+        if (galleryNavInner && window.innerWidth < 900) {
+          link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+      }
+    });
+  });
+}

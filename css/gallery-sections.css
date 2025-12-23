@@ -1,47 +1,71 @@
 /* Gallery Section Grouping */
 .gallery-section {
-    margin-bottom: 4rem;
-    border-bottom: 1px solid #e0d1c2;
-    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    position: relative;
+    scroll-margin-top: 180px;
+    /* Ensure scroll lands nicely below header+nav */
 }
 
+.gallery-section::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e0d1c2, transparent);
+    margin: 4rem auto 0;
+}
+
+.gallery-section:last-child::after,
 .gallery-section:last-child {
-    border-bottom: none;
+    display: none;
     margin-bottom: 0;
+    border-bottom: none;
+}
+
+/* Fix for the last child issue - simply removing the separator */
+.gallery-section:last-of-type::after {
+    display: none;
 }
 
 .gallery-heading {
     font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #3b2718;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     position: relative;
+    letter-spacing: -0.01em;
 }
 
-.gallery-heading::after {
-    content: "";
+.gallery-heading::before {
+    content: "Explore";
     display: block;
-    width: 60px;
-    height: 3px;
-    background: #f6c26b;
-    margin: 0.8rem auto 0;
-    border-radius: 2px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #f6c26b;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
-/* Gallery Sub-Navigation */
+/* Gallery Sub-Navigation - Premium Sticky Bar */
 .gallery-nav {
     position: sticky;
     top: 80px;
     /* Matches header height */
     z-index: 90;
-    background: rgba(251, 244, 235, 0.98);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(139, 115, 85, 0.2);
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    width: 100%;
+    background: rgba(251, 244, 235, 0.85);
+    /* More transparency */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1.2rem 0;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Softer shadow */
+    transition: all 0.3s ease;
 }
 
 .gallery-nav-inner {
@@ -50,59 +74,196 @@
     gap: 0.5rem;
     flex-wrap: wrap;
     padding: 0 1rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .gallery-nav-link {
     font-family: "Nunito", sans-serif;
     font-size: 0.85rem;
-    font-weight: 700;
-    color: #3b2718;
-    padding: 0.6rem 1.2rem;
-    border-radius: 50px;
-    background: #fff;
-    border: 1px solid #e0d1c2;
-    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #5a4a3e;
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    /* Pill shape */
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(139, 115, 85, 0.15);
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
     white-space: nowrap;
     text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    margin-bottom: 0.25rem;
-    /* Tiny spacing for wrap scenarios */
+    letter-spacing: 0.02em;
 }
 
 .gallery-nav-link:hover {
-    background: #fdf8f4;
-    border-color: #8b7355;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-color: #f6c26b;
     color: #3b2718;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(246, 194, 107, 0.15);
 }
 
-/* Active state creates a "pill" look */
+/* Active state */
 .gallery-nav-link.active {
     background: #3b2718;
-    color: #fff;
+    color: #f6c26b;
     border-color: #3b2718;
-    box-shadow: 0 4px 10px rgba(59, 39, 24, 0.3);
+    box-shadow: 0 6px 15px rgba(59, 39, 24, 0.25);
     transform: translateY(-1px);
+    font-weight: 700;
 }
 
-/* Hide scrollbar for cleaner look on mobile */
-@media (max-width: 768px) {
+/* Mobile Scroll Styling for Filters */
+@media (max-width: 900px) {
     .gallery-nav-inner {
         justify-content: flex-start;
         overflow-x: auto;
-        padding-bottom: 0.5rem;
-        /* Space for scrollbar if visible */
+        padding-bottom: 0.8rem;
+        /* Space for scrollbar */
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         -webkit-overflow-scrolling: touch;
         flex-wrap: nowrap;
+        scrollbar-width: none;
+        /* Hide scrollbar Firefox */
+        -ms-overflow-style: none;
+        /* Hide scrollbar IE/Edge */
+    }
+
+    .gallery-nav-inner::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar Chrome/Safari */
     }
 
     .gallery-nav {
-        padding: 0.75rem 0 0.25rem 0;
+        padding: 1rem 0 0.2rem 0;
+    }
+
+    .gallery-nav-link {
+        flex-shrink: 0;
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Refined Masonry Layout */
+.gallery-masonry {
+    column-count: 3;
+    column-gap: 2rem;
+    padding: 0 1rem;
+}
+
+.gallery-card {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    /* Smooth large radius */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: #e0d1c2;
+    /* Placeholder color before load */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Deep soft shadow */
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translateZ(0);
+    /* Hardware acceleration */
+}
+
+/* Hover Effect: Lift and Glow */
+.gallery-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.gallery-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+    filter: brightness(0.98);
+    /* Slight dim for premium feel */
+}
+
+.gallery-card:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.05);
+    /* Brighten on hover */
+}
+
+/* Overlay Design */
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1) 60%, transparent);
+    display: flex;
+    align-items: flex-end;
+    /* Align to bottom for caption if needed, or center icon */
+    justify-content: center;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Center icon */
+.gallery-overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    color: #3b2718;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.9);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    opacity: 0;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-card:hover .gallery-overlay i {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery-empty-message {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #8b7355;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px dashed #d0c0b0;
+    margin: 0 auto;
+    font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 900px) {
+    .gallery-masonry {
+        column-count: 2;
+        column-gap: 1rem;
+    }
+
+    .gallery-card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-masonry {
+        column-count: 1;
     }
 }
 
 /* Adjust scroll offset to account for fixed header + sticky nav */
 html {
-    scroll-padding-top: 160px;
+    scroll-padding-top: 180px;
 }
