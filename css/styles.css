@@ -1443,12 +1443,43 @@ a {
     align-items: center;
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: none;
+    /* Hide by default on mobile */
   }
 
   .main-nav.active {
-    display: flex !important;
+    display: flex;
     animation: slideDown 0.3s ease forwards;
   }
+
+  .menu-toggle {
+    display: block;
+    /* Show hamburger at 900px */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #3b2718;
+  }
+
+  .header-actions {
+    display: none;
+    /* Hide desktop actions at 900px */
+  }
+
+  .mobile-only-btn {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+
+  /* Remove underline from buttons */
+  .main-nav .mobile-only-btn::after {
+    display: none;
+  }
+}
+
+.mobile-only-btn {
+  display: none;
 }
 
 @keyframes slideDown {
