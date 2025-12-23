@@ -264,6 +264,44 @@
 }
 
 /* Adjust scroll offset to account for fixed header + sticky nav */
-html {
-    scroll-padding-top: 180px;
+
+/* Show More Button Styling */
+.gallery-show-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem auto 0;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 1px solid #d69b3d;
+    color: #3b2718;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.gallery-show-more-btn:hover {
+    background: #d69b3d;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(214, 155, 61, 0.3);
+}
+
+.gallery-show-more-btn i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.gallery-show-more-btn.expanded i {
+    transform: rotate(180deg);
+}
+
+.gallery-card.hidden {
+    display: none;
 }

@@ -289,3 +289,48 @@ if (gallerySections.length > 0 && galleryNavLinks.length > 0) {
     });
   });
 }
+
+// Gallery "Show More" Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const gallerySections = document.querySelectorAll(".gallery-section");
+  const MAX_VISIBLE_IMAGES = 6; // Set limit for initial view
+
+  gallerySections.forEach((section) => {
+    const masonry = section.querySelector(".gallery-masonry");
+    if (!masonry) return;
+
+    const cards = Array.from(masonry.querySelectorAll(".gallery-card"));
+
+    if (cards.length > MAX_VISIBLE_IMAGES) {
+      // Hide extra cards
+      cards.slice(MAX_VISIBLE_IMAGES).forEach(card => card.classList.add("hidden"));
+
+      // Create Button
+      const btn = document.createElement("button");
+      btn.className = "gallery-show-more-btn";
+      btn.innerHTML = `View All Photos (${cards.length}) <i class="fas fa-chevron-down"></i>`;
+
+      // Toggle Logic
+      btn.addEventListener("click", () => {
+        const isExpanded = btn.classList.contains("expanded");
+
+        if (isExpanded) {
+          // Collapse
+          cards.slice(MAX_VISIBLE_IMAGES).forEach(card => card.classList.add("hidden"));
+          btn.classList.remove("expanded");
+          btn.innerHTML = `View All Photos (${cards.length}) <i class="fas fa-chevron-down"></i>`;
+
+          // Scroll back to top of section gently
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          // Expand
+          cards.forEach(card => card.classList.remove("hidden"));
+          btn.classList.add("expanded");
+          btn.innerHTML = `Show Less <i class="fas fa-chevron-down"></i>`;
+        }
+      });
+
+      section.appendChild(btn);
+    }
+  });
+});
