@@ -10,19 +10,19 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Nunito:wght@300;400;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="icon" href="images/brownlogo.png" type="image/png">
+    <link rel="icon" href="images/logo/brownlogo.png" type="image/png">
 </head>
 
 <body>
     <header class="site-header">
         <div class="top-bar">
-            <div class="logo-area">
-                <img src="images/brownlogo.png" alt="EMatolweni Logo" class="logo-image" />
+            <a href="index.html" class="logo-area">
+                <img src="images/logo/brownlogo.png" alt="EMatolweni Logo" class="logo-image" />
                 <div class="logo-text">
                     <span class="brand-title">EMatolweni</span>
                     <span class="brand-subtitle">Guesthouse</span>
                 </div>
-            </div>
+            </a>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -55,159 +55,624 @@
     <main>
         <section class="section bg-cream">
             <div class="container">
-                <div class="gallery-masonry">
-                    <!-- Column 1 -->
-                    <div class="gallery-card" onclick="openImageModal('images/exterior-cju5ntfc-1.jpg')">
-                        <img src="images/exterior-cju5ntfc-1.jpg" alt="Exterior View">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
-                        </div>
+                <!-- Gallery Sub-Navigation -->
+                <div class="gallery-nav">
+                    <div class="gallery-nav-inner">
+                        <a href="#exterior" class="gallery-nav-link active">Exterior & Property</a>
+                        <a href="#room1" class="gallery-nav-link">Room 1</a>
+                        <a href="#room2" class="gallery-nav-link">Room 2</a>
+                        <a href="#room3" class="gallery-nav-link">Room 3</a>
+                        <a href="#room4" class="gallery-nav-link">Room 4</a>
+                        <a href="#room5" class="gallery-nav-link">Room 5</a>
+                        <a href="#room6" class="gallery-nav-link">Room 6</a>
+                        <a href="#room7" class="gallery-nav-link">Room 7</a>
+                        <a href="#room8" class="gallery-nav-link">Room 8</a>
                     </div>
-                    <div class="gallery-card" onclick="openImageModal('images/room-1-bkbj-vsf.jpg')">
-                        <img src="images/room-1-bkbj-vsf.jpg" alt="Room Interior">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="gallery-card" onclick="openImageModal('images/room-2-bvjitwrr-1.jpg')">
-                        <img src="images/room-2-bvjitwrr-1.jpg" alt="Room Interior" loading="lazy">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                <div class="gallery-section" id="exterior">
+                    <h2 class="gallery-heading">Exterior & Property</h2>
+                    <div class="gallery-masonry">
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/790427949.jpg')">
+                            <img src="images/exterior/790427949.jpg" alt="Exterior & Property Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/790427993.jpg')">
+                            <img src="images/exterior/790427993.jpg" alt="Exterior & Property Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/exterior-cju5ntfc-1.jpg')">
+                            <img src="images/exterior/exterior-cju5ntfc-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0023-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0023-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0024-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0024-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0025-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0025-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0026-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0026-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0027-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0027-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0028-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0028-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0029-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0029-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/exterior/img-20251209-wa0030-1.jpg')">
+                            <img src="images/exterior/img-20251209-wa0030-1.jpg" alt="Exterior & Property Image"
+                                loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
                     </div>
-
-                    <!-- Column 2 -->
-                    <div class="gallery-card" onclick="openImageModal('images/room-3-8d8-tn4p-1.jpg')">
-                        <img src="images/room-3-8d8-tn4p-1.jpg" alt="Room Interior">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-section" id="room1">
+                    <h2 class="gallery-heading">Room 1</h2>
+                    <div class="gallery-masonry">
+                        <div class="gallery-card" onclick="openImageModal('images/room 1/IMG_4954.jpg')">
+                            <img src="images/room 1/IMG_4954.jpg" alt="Room 1 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
                     </div>
-                    <div class="gallery-card" onclick="openImageModal('images/room-4-dmsok5ng-1.jpg')">
-                        <img src="images/room-4-dmsok5ng-1.jpg" alt="Room Interior">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-section" id="room2">
+                    <h2 class="gallery-heading">Room 2</h2>
+                    <div class="gallery-masonry">
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4929.jpg')">
+                            <img src="images/room 2/IMG_4929.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4930.jpg')">
+                            <img src="images/room 2/IMG_4930.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4931.jpg')">
+                            <img src="images/room 2/IMG_4931.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4932.jpg')">
+                            <img src="images/room 2/IMG_4932.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4933.jpg')">
+                            <img src="images/room 2/IMG_4933.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4934.jpg')">
+                            <img src="images/room 2/IMG_4934.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4935.jpg')">
+                            <img src="images/room 2/IMG_4935.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4936.jpg')">
+                            <img src="images/room 2/IMG_4936.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4937.jpg')">
+                            <img src="images/room 2/IMG_4937.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4938.jpg')">
+                            <img src="images/room 2/IMG_4938.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4939.jpg')">
+                            <img src="images/room 2/IMG_4939.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4940.jpg')">
+                            <img src="images/room 2/IMG_4940.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4941.jpg')">
+                            <img src="images/room 2/IMG_4941.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4942.jpg')">
+                            <img src="images/room 2/IMG_4942.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4943.jpg')">
+                            <img src="images/room 2/IMG_4943.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4947.jpg')">
+                            <img src="images/room 2/IMG_4947.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4948.jpg')">
+                            <img src="images/room 2/IMG_4948.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 2/IMG_4949.jpg')">
+                            <img src="images/room 2/IMG_4949.jpg" alt="Room 2 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
                     </div>
-                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0023-1.jpg')">
-                        <img src="images/img-20251209-wa0023-1.jpg" alt="Guesthouse Detail">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-section" id="room3">
+                    <h2 class="gallery-heading">Room 3</h2>
+                    <div class="gallery-masonry">
+                        <p style="width: 100%; text-align: center; padding: 2rem; color: #666;">Images coming soon</p>
+                    </div>
+                </div>
+                <div class="gallery-section" id="room4">
+                    <h2 class="gallery-heading">Room 4</h2>
+                    <div class="gallery-masonry">
+                        <p style="width: 100%; text-align: center; padding: 2rem; color: #666;">Images coming soon</p>
+                    </div>
+                </div>
+                <div class="gallery-section" id="room5">
+                    <h2 class="gallery-heading">Room 5</h2>
+                    <div class="gallery-masonry">
+                        <p style="width: 100%; text-align: center; padding: 2rem; color: #666;">Images coming soon</p>
+                    </div>
+                </div>
+                <div class="gallery-section" id="room6">
+                    <h2 class="gallery-heading">Room 6</h2>
+                    <div class="gallery-masonry">
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5064.jpg')">
+                            <img src="images/room 6/IMG_5064.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5065.jpg')">
+                            <img src="images/room 6/IMG_5065.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5070.jpg')">
+                            <img src="images/room 6/IMG_5070.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5072.jpg')">
+                            <img src="images/room 6/IMG_5072.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5073.jpg')">
+                            <img src="images/room 6/IMG_5073.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5075.jpg')">
+                            <img src="images/room 6/IMG_5075.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5076.jpg')">
+                            <img src="images/room 6/IMG_5076.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5077.jpg')">
+                            <img src="images/room 6/IMG_5077.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5078.jpg')">
+                            <img src="images/room 6/IMG_5078.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5079.jpg')">
+                            <img src="images/room 6/IMG_5079.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5080.jpg')">
+                            <img src="images/room 6/IMG_5080.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5081.jpg')">
+                            <img src="images/room 6/IMG_5081.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5082.jpg')">
+                            <img src="images/room 6/IMG_5082.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5083.jpg')">
+                            <img src="images/room 6/IMG_5083.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5084.jpg')">
+                            <img src="images/room 6/IMG_5084.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5085.jpg')">
+                            <img src="images/room 6/IMG_5085.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5086.jpg')">
+                            <img src="images/room 6/IMG_5086.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5087.jpg')">
+                            <img src="images/room 6/IMG_5087.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5088.jpg')">
+                            <img src="images/room 6/IMG_5088.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5089.jpg')">
+                            <img src="images/room 6/IMG_5089.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5090.jpg')">
+                            <img src="images/room 6/IMG_5090.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5091.jpg')">
+                            <img src="images/room 6/IMG_5091.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5092.jpg')">
+                            <img src="images/room 6/IMG_5092.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 6/IMG_5094.jpg')">
+                            <img src="images/room 6/IMG_5094.jpg" alt="Room 6 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
                     </div>
-                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0024-1.jpg')">
-                        <img src="images/img-20251209-wa0024-1.jpg" alt="Guesthouse Detail">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-section" id="room7">
+                    <h2 class="gallery-heading">Room 7</h2>
+                    <div class="gallery-masonry">
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5010.jpg')">
+                            <img src="images/room 7/IMG_5010.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5011.jpg')">
+                            <img src="images/room 7/IMG_5011.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5012.jpg')">
+                            <img src="images/room 7/IMG_5012.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5013.jpg')">
+                            <img src="images/room 7/IMG_5013.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5014.jpg')">
+                            <img src="images/room 7/IMG_5014.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5015.jpg')">
+                            <img src="images/room 7/IMG_5015.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5016.jpg')">
+                            <img src="images/room 7/IMG_5016.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5017.jpg')">
+                            <img src="images/room 7/IMG_5017.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5019.jpg')">
+                            <img src="images/room 7/IMG_5019.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5020.jpg')">
+                            <img src="images/room 7/IMG_5020.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5021.jpg')">
+                            <img src="images/room 7/IMG_5021.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5022.jpg')">
+                            <img src="images/room 7/IMG_5022.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5023.jpg')">
+                            <img src="images/room 7/IMG_5023.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5024.jpg')">
+                            <img src="images/room 7/IMG_5024.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5025.jpg')">
+                            <img src="images/room 7/IMG_5025.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5026.jpg')">
+                            <img src="images/room 7/IMG_5026.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5027.jpg')">
+                            <img src="images/room 7/IMG_5027.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5028.jpg')">
+                            <img src="images/room 7/IMG_5028.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5029.jpg')">
+                            <img src="images/room 7/IMG_5029.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5030.jpg')">
+                            <img src="images/room 7/IMG_5030.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5031.jpg')">
+                            <img src="images/room 7/IMG_5031.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5032.jpg')">
+                            <img src="images/room 7/IMG_5032.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5033.jpg')">
+                            <img src="images/room 7/IMG_5033.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5034.jpg')">
+                            <img src="images/room 7/IMG_5034.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5035.jpg')">
+                            <img src="images/room 7/IMG_5035.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5036.jpg')">
+                            <img src="images/room 7/IMG_5036.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5037.jpg')">
+                            <img src="images/room 7/IMG_5037.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5038.jpg')">
+                            <img src="images/room 7/IMG_5038.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5039.jpg')">
+                            <img src="images/room 7/IMG_5039.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5040.jpg')">
+                            <img src="images/room 7/IMG_5040.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5041.jpg')">
+                            <img src="images/room 7/IMG_5041.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5042.jpg')">
+                            <img src="images/room 7/IMG_5042.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5045.jpg')">
+                            <img src="images/room 7/IMG_5045.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5046.jpg')">
+                            <img src="images/room 7/IMG_5046.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5047.jpg')">
+                            <img src="images/room 7/IMG_5047.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5048.jpg')">
+                            <img src="images/room 7/IMG_5048.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5049.jpg')">
+                            <img src="images/room 7/IMG_5049.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5051.jpg')">
+                            <img src="images/room 7/IMG_5051.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5052.jpg')">
+                            <img src="images/room 7/IMG_5052.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5055.jpg')">
+                            <img src="images/room 7/IMG_5055.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5057.jpg')">
+                            <img src="images/room 7/IMG_5057.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5058.jpg')">
+                            <img src="images/room 7/IMG_5058.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5059.jpg')">
+                            <img src="images/room 7/IMG_5059.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5060.jpg')">
+                            <img src="images/room 7/IMG_5060.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 7/IMG_5061.jpg')">
+                            <img src="images/room 7/IMG_5061.jpg" alt="Room 7 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
                     </div>
-
-                    <!-- Column 3 -->
-                    <div class="gallery-card" onclick="openImageModal('images/room-5-dsjb7zw6-1.jpg')">
-                        <img src="images/room-5-dsjb7zw6-1.jpg" alt="Room Interior">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                </div>
+                <div class="gallery-section" id="room8">
+                    <h2 class="gallery-heading">Room 8</h2>
+                    <div class="gallery-masonry">
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4959.jpg')">
+                            <img src="images/room 8/IMG_4959.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
-                    </div>
-
-                    <div class="gallery-card" onclick="openImageModal('images/room-6-datd-fjj.jpg')">
-                        <img src="images/room-6-datd-fjj.jpg" alt="Room Interior">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4960.jpg')">
+                            <img src="images/room 8/IMG_4960.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0025-1.jpg')">
-                        <img src="images/img-20251209-wa0025-1.jpg" alt="Guesthouse Detail">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4961.jpg')">
+                            <img src="images/room 8/IMG_4961.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0027-1.jpg')">
-                        <img src="images/img-20251209-wa0027-1.jpg" alt="Guesthouse Detail">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4962.jpg')">
+                            <img src="images/room 8/IMG_4962.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/img-20251209-wa0030-1.jpg')">
-                        <img src="images/img-20251209-wa0030-1.jpg" alt="Guesthouse Detail">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-expand"></i>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4963.jpg')">
+                            <img src="images/room 8/IMG_4963.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
                         </div>
-                    </div>
-
-                    <!-- New Added Images -->
-                    <div class="gallery-card" onclick="openImageModal('images/790042590.jpg')">
-                        <img src="images/790042590.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790042592.jpg')">
-                        <img src="images/790042592.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790042593.jpg')">
-                        <img src="images/790042593.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790427949.jpg')">
-                        <img src="images/790427949.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790427993.jpg')">
-                        <img src="images/790427993.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428144.jpg')">
-                        <img src="images/790428144.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428213.jpg')">
-                        <img src="images/790428213.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428338.jpg')">
-                        <img src="images/790428338.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428617.jpg')">
-                        <img src="images/790428617.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428642.jpg')">
-                        <img src="images/790428642.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428675.jpg')">
-                        <img src="images/790428675.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428712.jpg')">
-                        <img src="images/790428712.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428750.jpg')">
-                        <img src="images/790428750.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428781.jpg')">
-                        <img src="images/790428781.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428815.jpg')">
-                        <img src="images/790428815.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428850.jpg')">
-                        <img src="images/790428850.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428913.jpg')">
-                        <img src="images/790428913.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-                    </div>
-                    <div class="gallery-card" onclick="openImageModal('images/790428963.jpg')">
-                        <img src="images/790428963.jpg" alt="Gallery Image">
-                        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4964.jpg')">
+                            <img src="images/room 8/IMG_4964.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4965.jpg')">
+                            <img src="images/room 8/IMG_4965.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4966.jpg')">
+                            <img src="images/room 8/IMG_4966.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4967.jpg')">
+                            <img src="images/room 8/IMG_4967.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4968.jpg')">
+                            <img src="images/room 8/IMG_4968.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4969.jpg')">
+                            <img src="images/room 8/IMG_4969.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4970.jpg')">
+                            <img src="images/room 8/IMG_4970.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4971.jpg')">
+                            <img src="images/room 8/IMG_4971.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4973.jpg')">
+                            <img src="images/room 8/IMG_4973.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4974.jpg')">
+                            <img src="images/room 8/IMG_4974.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4975.jpg')">
+                            <img src="images/room 8/IMG_4975.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4978.jpg')">
+                            <img src="images/room 8/IMG_4978.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4979.jpg')">
+                            <img src="images/room 8/IMG_4979.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4980.jpg')">
+                            <img src="images/room 8/IMG_4980.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4981.jpg')">
+                            <img src="images/room 8/IMG_4981.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4982.jpg')">
+                            <img src="images/room 8/IMG_4982.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4983.jpg')">
+                            <img src="images/room 8/IMG_4983.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4984.jpg')">
+                            <img src="images/room 8/IMG_4984.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4986.jpg')">
+                            <img src="images/room 8/IMG_4986.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4987.jpg')">
+                            <img src="images/room 8/IMG_4987.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4991.jpg')">
+                            <img src="images/room 8/IMG_4991.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4993.jpg')">
+                            <img src="images/room 8/IMG_4993.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4994.jpg')">
+                            <img src="images/room 8/IMG_4994.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4995.jpg')">
+                            <img src="images/room 8/IMG_4995.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4997.jpg')">
+                            <img src="images/room 8/IMG_4997.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4998.jpg')">
+                            <img src="images/room 8/IMG_4998.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_4999.jpg')">
+                            <img src="images/room 8/IMG_4999.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_5001.jpg')">
+                            <img src="images/room 8/IMG_5001.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_5002.jpg')">
+                            <img src="images/room 8/IMG_5002.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_5006.jpg')">
+                            <img src="images/room 8/IMG_5006.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_5007.jpg')">
+                            <img src="images/room 8/IMG_5007.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_5008.jpg')">
+                            <img src="images/room 8/IMG_5008.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
+                        <div class="gallery-card" onclick="openImageModal('images/room 8/IMG_5009.jpg')">
+                            <img src="images/room 8/IMG_5009.jpg" alt="Room 8 Image" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -217,13 +682,13 @@
     <footer class="site-footer">
         <div class="container footer-main">
             <div class="footer-column">
-                <div class="logo-area footer-logo">
-                    <img src="images/trans-logo.png" alt="EMatolweni Logo" class="logo-image" />
+                <a href="index.html" class="logo-area footer-logo">
+                    <img src="images/logo/trans-logo.png" alt="EMatolweni Logo" class="logo-image" />
                     <div class="logo-text">
                         <span class="brand-title">EMatolweni</span>
                         <span class="brand-subtitle">Guesthouse</span>
                     </div>
-                </div>
+                </a>
                 <p class="footer-description">
                     Experience luxury accommodation infused with African charm in the
                     heart of Kimberley.

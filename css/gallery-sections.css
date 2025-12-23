@@ -1,0 +1,108 @@
+/* Gallery Section Grouping */
+.gallery-section {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #e0d1c2;
+    padding-bottom: 3rem;
+}
+
+.gallery-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.gallery-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #3b2718;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.gallery-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f6c26b;
+    margin: 0.8rem auto 0;
+    border-radius: 2px;
+}
+
+/* Gallery Sub-Navigation */
+.gallery-nav {
+    position: sticky;
+    top: 80px;
+    /* Matches header height */
+    z-index: 90;
+    background: rgba(251, 244, 235, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(139, 115, 85, 0.2);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.gallery-nav-inner {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.gallery-nav-link {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #3b2718;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    background: #fff;
+    border: 1px solid #e0d1c2;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0.25rem;
+    /* Tiny spacing for wrap scenarios */
+}
+
+.gallery-nav-link:hover {
+    background: #fdf8f4;
+    border-color: #8b7355;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    color: #3b2718;
+}
+
+/* Active state creates a "pill" look */
+.gallery-nav-link.active {
+    background: #3b2718;
+    color: #fff;
+    border-color: #3b2718;
+    box-shadow: 0 4px 10px rgba(59, 39, 24, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Hide scrollbar for cleaner look on mobile */
+@media (max-width: 768px) {
+    .gallery-nav-inner {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        /* Space for scrollbar if visible */
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+
+    .gallery-nav {
+        padding: 0.75rem 0 0.25rem 0;
+    }
+}
+
+/* Adjust scroll offset to account for fixed header + sticky nav */
+html {
+    scroll-padding-top: 160px;
+}

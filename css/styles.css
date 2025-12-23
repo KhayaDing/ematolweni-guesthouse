@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+@import url('gallery-sections.css');
+
 body {
   font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -129,8 +131,14 @@ a {
   transition: width 0.2s ease;
 }
 
-.main-nav a:hover::after {
+.main-nav a:hover::after,
+.main-nav a.active::after {
   width: 100%;
+}
+
+.main-nav a.active {
+  color: #3b2718;
+  font-weight: 700;
 }
 
 .header-actions {
@@ -811,7 +819,11 @@ a {
 
 @media (max-width: 600px) {
   .hero-content {
-    bottom: 18%;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 2rem 1.5rem;
   }
 
   .hero-buttons {
@@ -1029,7 +1041,7 @@ a {
 .page-hero {
   height: 50vh;
   position: relative;
-  background-image: url('images/790427949.jpg');
+  background-image: url('../images/exterior/790427949.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1598,14 +1610,8 @@ a {
   animation: fadeIn 0.5s;
 }
 
-/* Active Nav Link State */
-.main-nav a.active {
-  color: #f6c26b;
-}
 
-.main-nav a.active::after {
-  width: 100%;
-}
+
 
 @media (max-width: 600px) {
   .back-to-top {
