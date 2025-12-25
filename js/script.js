@@ -235,14 +235,41 @@ const contactForm = document.querySelector(".contact-form");
 
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
     const btn = contactForm.querySelector("button[type='submit']");
+    const successMsg = document.getElementById("form-success");
+
     if (btn) {
       const originalText = btn.textContent;
       btn.textContent = "Sending...";
       btn.disabled = true;
 
-      // Since it's Netlify, it will redirect. 
-      // If we wanted to stay on page we'd need AJAX but standard form submission is robust.
+      const formData = new FormData(contactForm);
+      const data = new URLSearchParams(formData).toString();
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: data,
+      })
+        .then(() => {
+          contactForm.reset();
+          if (successMsg) {
+            successMsg.style.display = "block";
+            // Optional: Hide message after a few seconds
+            setTimeout(() => {
+              successMsg.style.display = "none";
+            }, 6000);
+          }
+        })
+        .catch((error) => {
+          alert("Oops! Something went wrong. Please try again later.");
+          console.error(error);
+        })
+        .finally(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+        });
     }
   });
 }

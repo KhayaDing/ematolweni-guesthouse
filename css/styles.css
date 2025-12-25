@@ -1429,6 +1429,10 @@ a {
 }
 
 /* Mobile Menu Styling Overrides */
+.mobile-only-btn {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .main-nav {
     position: absolute;
@@ -1478,9 +1482,7 @@ a {
   }
 }
 
-.mobile-only-btn {
-  display: none;
-}
+
 
 @keyframes slideDown {
   from {
