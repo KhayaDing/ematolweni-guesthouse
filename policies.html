@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Nunito:wght@300;400;600;700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="icon" href="images/logo/brownlogo.png" type="image/png">
 </head>
 
@@ -23,10 +24,7 @@
                 </div>
             </a>
             <div class="menu-toggle" id="mobile-menu">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#3b2718" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
+                <i class="fas fa-bars"></i>
             </div>
             <nav class="main-nav">
                 <a href="index.html">Home</a>
@@ -180,7 +178,7 @@
                         <p><strong>At Time of Booking:</strong></p>
                         <ul>
                             <li>A deposit is required to secure your reservation</li>
-                            <li>Deposit amount: [Varies by booking - specified at checkout]</li>
+                            <li>Deposit amount: Varies by booking (specified at checkout)</li>
                             <li>Payment is processed through our secure booking system (Nightsbridge)</li>
                         </ul>
 
@@ -611,9 +609,13 @@
     </footer>
 
     <a href="https://wa.me/27780677764" class="whatsapp-float" aria-label="WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-            class="wa-icon-img" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon-img"
+            loading="lazy" />
     </a>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
