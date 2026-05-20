@@ -1876,8 +1876,8 @@ a {
 .partner-logo {
   max-height: 100%;
   width: auto;
-  object-fit: contain;
-  filter: grayscale(1) brightness(0.4);
+  display: block;
+  filter: grayscale(1) brightness(0.45);
   transition: filter 0.3s ease;
 }
 
