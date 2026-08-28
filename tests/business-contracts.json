@@ -14,9 +14,7 @@
       "tel:+27785926801",
       "tel:+27785926801"
     ],
-    "forms": [
-      "<form class=\"contact-form\" name=\"contact\" method=\"POST\" action=\"/\" data-netlify=\"true\" netlify-honeypot=\"bot-field\" data-submission-enabled=\"false\">"
-    ]
+    "forms": []
   },
   "gallery.html": {
     "destinations": [
@@ -72,5 +70,11 @@
       "tel:+27785926801"
     ],
     "forms": []
+  },
+  "enquiry.html": {
+    "destinations": [],
+    "forms": [
+      "<form class=\"contact-form\" name=\"contact\" method=\"POST\" action=\"https://ematolweni-guesthouse.netlify.app/\" data-netlify=\"true\" netlify-honeypot=\"bot-field\" data-submission-enabled=\"true\">"
+    ]
   }
 }

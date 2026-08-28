@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send an enquiry | EMatolweni Guesthouse</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Nunito:wght@300;400;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/images/logos/brownlogo-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+</head>
+<body class="enquiry-page">
+  <div class="enquiry-shell">
+    <nav id="main-navigation" aria-label="Enquiry navigation"><a href="index.html" target="_blank" rel="noopener">EMatolweni Guesthouse website</a></nav>
+    <main>
+      <h1>Send an enquiry</h1>
+      <form class="contact-form" name="contact" method="POST" action="https://ematolweni-guesthouse.netlify.app/" data-netlify="true" netlify-honeypot="bot-field" data-submission-enabled="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden>
+              <label>Leave this field empty: <input type="text" name="bot-field" autocomplete="off" tabindex="-1"></label>
+            </p>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" maxlength="100" placeholder="John" autocomplete="given-name" required>
+              </div>
+              <div class="form-field">
+                <label for="surname">Surname *</label>
+                <input type="text" id="surname" name="surname" maxlength="100" placeholder="Doe" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" maxlength="254" placeholder="john@example.com" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" maxlength="40" placeholder="+27 123 456 789" autocomplete="tel" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="checkIn">Check-in *</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+              </div>
+              <div class="form-field">
+                <label for="checkOut">Check-out *</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" maxlength="5000" rows="4"
+                placeholder="Tell us about your booking requirements or any questions you have..."></textarea>
+            </div>
+
+            <div class="consent-field">
+              <input type="checkbox" id="privacyConsent" name="privacyConsent" value="consented" required
+                aria-describedby="privacy-notice consent-error">
+              <label for="privacyConsent">I have read the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and consent to
+                EMatolweni Guesthouse using my information to respond to this enquiry.</label>
+            </div>
+            <p id="consent-error" class="consent-validation" role="alert" aria-live="polite" hidden>
+              Please select the consent checkbox before sending your enquiry.
+            </p>
+            <p id="privacy-notice" class="form-privacy-notice">
+              Your name, email, phone number, stay dates, optional message and consent are sent to Netlify Forms to process your enquiry. Email notifications go to the guesthouse's designated Gmail inbox. Read our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> for details.
+            </p>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary full-width" aria-describedby="privacy-notice">
+                Send Message
+              </button>
+            </div>
+            <div id="form-success" class="form-success" role="status" aria-live="polite" style="display: none;">
+              Thank you. The submission service accepted your enquiry. This does not confirm email delivery or a booking.
+            </div>
+            <div id="form-error" class="form-error" role="alert" aria-live="assertive" style="display: none;">
+              We could not confirm acceptance of your enquiry. Please contact us directly before retrying to avoid duplicates.
+            </div>
+          </form>
+    </main>
+    <footer class="site-footer"><p>&copy; {{year}} EMatolweni Guesthouse</p></footer>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -10,3 +10,13 @@
   to = "/404.html"
   status = 404
   force = false
+
+# Only the guesthouse's HTTPS sites may embed the enquiry receiver.
+[[headers]]
+  for = "/enquiry.html"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' https://ematolweniguesthouse.co.za https://www.ematolweniguesthouse.co.za; form-action 'self' https://ematolweni-guesthouse.netlify.app; base-uri 'none'; object-src 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    Cache-Control = "no-cache"
+    X-Robots-Tag = "noindex"

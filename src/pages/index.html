@@ -310,77 +310,12 @@
             </div>
           </div>
 
-          <form class="contact-form" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-submission-enabled="false">
-            <input type="hidden" name="form-name" value="contact">
-            <p hidden>
-              <label>Leave this field empty: <input type="text" name="bot-field" autocomplete="off" tabindex="-1"></label>
-            </p>
-            <div class="form-row">
-              <div class="form-field">
-                <label for="firstName">First Name *</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" autocomplete="given-name" required>
-              </div>
-              <div class="form-field">
-                <label for="surname">Surname *</label>
-                <input type="text" id="surname" name="surname" placeholder="Doe" autocomplete="family-name" required>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-field">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
-              </div>
-              <div class="form-field">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" placeholder="+27 123 456 789" autocomplete="tel" required>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-field">
-                <label for="checkIn">Check-in *</label>
-                <input type="date" id="checkIn" name="checkIn" required>
-              </div>
-              <div class="form-field">
-                <label for="checkOut">Check-out *</label>
-                <input type="date" id="checkOut" name="checkOut" required>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label for="message">Message (optional)</label>
-              <textarea id="message" name="message" rows="4"
-                placeholder="Tell us about your booking requirements or any questions you have..."></textarea>
-            </div>
-
-            <div class="consent-field">
-              <input type="checkbox" id="privacyConsent" name="privacyConsent" value="consented" required
-                aria-describedby="privacy-notice consent-error">
-              <label for="privacyConsent">I have read the <a href="privacy.html">Privacy Policy</a> and consent to
-                EMatolweni Guesthouse using my information to respond to this enquiry.</label>
-            </div>
-            <p id="consent-error" class="consent-validation" role="alert" aria-live="polite" hidden>
-              Please select the consent checkbox before sending your enquiry.
-            </p>
-            <p id="privacy-notice" class="form-privacy-notice">
-              We ask for your name, email, phone number, stay dates, optional message and consent to answer your enquiry
-              and assist with booking requirements. Afrihost will host this website; Netlify Forms is the intended
-              enquiry processor. Online submission is currently unavailable while that connection is being configured.
-              Please use the contact details alongside this form. Read our <a href="privacy.html">Privacy Policy</a> for details.
-            </p>
-            <div class="form-actions">
-              <button type="submit" class="btn-primary full-width" disabled aria-describedby="privacy-notice">
-                Send Message
-              </button>
-            </div>
-            <div id="form-success" class="form-success" role="status" aria-live="polite" style="display: none;">
-              Thank you. The submission service accepted your enquiry. This does not confirm email delivery or a booking.
-            </div>
-            <div id="form-error" class="form-error" role="alert" aria-live="assertive" style="display: none;">
-              We could not confirm acceptance of your enquiry. Please contact us directly before retrying to avoid duplicates.
-            </div>
-          </form>
+          <div class="contact-embed">
+            <iframe id="enquiry-frame" title="Send an enquiry to EMatolweni Guesthouse"
+              src="https://ematolweni-guesthouse.netlify.app/enquiry.html" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+              sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            <p class="form-privacy-notice enquiry-fallback">If the form does not load, <a href="https://ematolweni-guesthouse.netlify.app/enquiry.html" target="_blank" rel="noopener">open the enquiry form in a new tab</a>.</p>
+          </div>
         </div>
       </div>
     </section>

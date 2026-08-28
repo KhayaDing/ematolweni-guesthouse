@@ -1,7 +1,7 @@
 // Deliberately small template renderer: known tokens only, no client-side includes.
 const fs = require('node:fs');
 const {renderMedia} = require('./render-media.cjs');
-const pages = ['index.html', 'gallery.html', 'policies.html', 'privacy.html', '404.html'];
+const pages = ['index.html', 'gallery.html', 'policies.html', 'privacy.html', '404.html', 'enquiry.html'];
 const read = file => fs.readFileSync(file, 'utf8').replaceAll('\r\n', '\n');
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 function fill(template, values) {
@@ -66,7 +66,7 @@ function renderSite() {
       year: new Date().getFullYear(),
       footerSocial: page === '404.html' ? '' : read('src/partials/footer-social.html'),
     };
-    const html = fill(read('src/pages/' + page), {header: fill(header, values), footer: fill(footer, values), gallery});
+    const html = fill(read('src/pages/' + page), {year: values.year, header: fill(header, values), footer: fill(footer, values), gallery});
     return [page, renderMedia(html).replace('<!DOCTYPE html>', `<!DOCTYPE html>\n<!-- Generated from src/pages/${page}, src/partials and src/data by pnpm build. Do not edit. -->`)];
   }));
 }

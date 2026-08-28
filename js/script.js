@@ -165,7 +165,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Sticky navigation scroll effect
 const topBar = document.querySelector(".top-bar");
 
-window.addEventListener("scroll", () => {
+if (topBar) window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     topBar.classList.add("scrolled");
   } else {
@@ -429,9 +429,10 @@ if (contactForm) {
     }
   });
 
-  // Release gate: do not enable until the owner approves and verifies the Netlify route.
-  // data-netlify alone never enables submissions on Afrihost.
-  const submissionEnabled = contactForm.dataset.submissionEnabled === "true";
+  // AJAX is only allowed on the form receiver origin. A downloaded Afrihost copy
+  // must use the embedded receiver or open its public link. No cross-origin fetch.
+  const submissionEnabled = contactForm.dataset.submissionEnabled === "true" &&
+    new URL(contactForm.action).origin === window.location.origin;
   const submitButton = contactForm.querySelector("button[type='submit']");
   if (submitButton) submitButton.disabled = !submissionEnabled;
   let submitting = false;
@@ -446,7 +447,7 @@ if (contactForm) {
     if (errorMsg) errorMsg.style.display = "none";
     if (!submissionEnabled) {
       if (errorMsg) {
-        errorMsg.textContent = "Online submission is unavailable while the Netlify connection is being configured. Please use the contact details alongside this form.";
+        errorMsg.textContent = "Please open the Netlify enquiry form using the website contact section. This local copy cannot accept submissions.";
         errorMsg.style.display = "block";
       }
       return;
@@ -482,8 +483,8 @@ if (contactForm) {
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
       const formData = new FormData(contactForm);
-      // This existing same-origin Netlify transport is gated OFF in release HTML.
-      // Its Afrihost replacement requires architecture approval and live verification.
+      // Netlify serves this document and receives its URL-encoded POST.
+      // HTTP acceptance is not evidence of notification delivery or a booking.
       const response = await fetch(contactForm.action, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -610,3 +611,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Resize the embedded receiver without exchanging any enquiry fields.
+const enquiryFrame = document.getElementById('enquiry-frame');
+if (enquiryFrame) {
+  const receiverOrigin = new URL(enquiryFrame.src).origin;
+  window.addEventListener('message', event => {
+    if (event.origin !== receiverOrigin || event.source !== enquiryFrame.contentWindow) return;
+    if (event.data?.type !== 'ematolweni:enquiry-height' || !Number.isFinite(event.data.height)) return;
+    enquiryFrame.style.height = Math.min(2400, Math.max(500, Math.ceil(event.data.height))) + 'px';
+  });
+}
+const enquiryShell = document.querySelector('.enquiry-shell');
+if (enquiryShell && window.parent !== window) {
+  let parentOrigin;
+  try { parentOrigin = new URL(document.referrer).origin; } catch { /* Fixed-height fallback remains usable. */ }
+  const allowedParents = ['https://ematolweniguesthouse.co.za', 'https://www.ematolweniguesthouse.co.za', 'https://ematolweni-guesthouse.netlify.app'];
+  if (allowedParents.includes(parentOrigin)) {
+    const reportSize = () => window.parent.postMessage({type:'ematolweni:enquiry-height', height:enquiryShell.scrollHeight + 16}, parentOrigin);
+    new ResizeObserver(reportSize).observe(enquiryShell);
+    window.addEventListener('load', reportSize);
+  }
+}

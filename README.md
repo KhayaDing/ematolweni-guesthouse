@@ -26,7 +26,7 @@ For Linux CI, browser installation may need `pnpm exec playwright install --with
 
 | Path | Purpose |
 | --- | --- |
-| `src/pages/*.html` | Editable content for Home, Gallery, Policies, Privacy and 404 |
+| `src/pages/*.html` | Editable content for Home, Gallery, Policies, Privacy, 404 and the enquiry receiver |
 | `src/partials/header.html` | Shared top navigation, phone and booking actions |
 | `src/partials/footer.html`, `footer-social.html` | Shared footer and optional social link (404 retains its simpler footer) |
 | `src/data/gallery.json` | **Only gallery content list**: collection order, titles, status, photographs and alt text |
@@ -77,7 +77,7 @@ asset paths to hashes; it contains no source templates or private configuration.
 ```sh
 pnpm build          # Generate dist with complete HTML and fingerprinted assets
 pnpm preview        # Preview dist on http://127.0.0.1:8080
-pnpm check:html     # Offline HTML validation of all five generated pages
+pnpm check:html     # Offline HTML validation of all six generated pages
 pnpm check:links    # Assets, image paths/srcsets, fragments, IDs and booking contracts
 pnpm check:js       # Node syntax checks for site JS, build scripts and tests
 pnpm check          # All three fast checks above (build first)
@@ -93,7 +93,8 @@ They use 1440x900, 768x1024 and 390x844 Chromium viewports. They check all pages
 no horizontal overflow, accessible names, lightbox Enter/Escape/arrows/focus cycling,
 show-more, mobile navigation, carousel controls, local form validity and JS-disabled
 photo loading. Contact state tests use an in-memory fetch substitute and test-only HTML
-activation; real writes remain blocked. Release-gated submission is also tested without JS. Outbound
+activation; real writes remain blocked. Native submissions without JS and iframe origin checks
+are tested with intercepted requests. Outbound
 booking/enquiry links are inspected, never followed. Fonts/styles load from the site's
 existing providers; third-party embeds are replaced with empty local test responses.
 Reports/screenshots are in `playwright-report/` and `test-results/`.
@@ -114,10 +115,10 @@ change, after reviewing the real business requirement; never update it just to p
   specials, deposits, payment and room selection belong to NightsBridge. No Rooms page,
   manual prices, widgets or guessed room deep links were added.
 - WhatsApp remains an enquiry channel at the existing number and prefilled question.
-- **Contact submissions are release-gated OFF** pending approval of an Afrihost-to-Netlify
-  route. Netlify Forms remains the selected backend. The existing POST `/` is inert, not
-  an Afrihost integration. Do not merely flip the flag: see `CONTACT-FORM.md` for the
-  architecture decision, dashboard steps and separate submission/inbox verification gates.
+- **Contact enquiries use the Netlify-hosted receiver embedded on the homepage.**
+  Netlify Forms remains the backend, including when the homepage is served by Afrihost.
+  See `CONTACT-FORM.md` for deployment, dashboard settings and separate submission/inbox
+  verification. A downloaded receiver on another host blocks AJAX to avoid false success.
 - Generic luxury/budget positioning was replaced with restrained self-catering wording.
   Confirm that wording with the owner. Concrete property facts were retained, not independently
   certified; the existing legal draft still needs its stated owner/legal review.
@@ -137,8 +138,8 @@ robots.txt, sitemap.xml and individual .well-known verification resources. Revie
 build's path allowlist before adding another type. Preserve server-managed ACME challenges
 and any existing legitimate live resources when the owner deploys; do not overwrite them.
 
-The earlier audit reported LiteSpeed. This task changes **local packaging only** and does
-not verify/change the current live server, DNS or file exposure.
+The public primary domain responds from LiteSpeed; the form receiver is hosted on Netlify.
+Deploying to Netlify does not upload the homepage to Afrihost or change DNS.
 
 - **LiteSpeed / Apache-compatible hosting:** ask the host to point the document root at
   the release contents or upload only `dist/`. Review and merge
@@ -146,10 +147,11 @@ not verify/change the current live server, DNS or file exposure.
   host; do not overwrite existing redirects, handlers or ACME rules. Confirm override/module
   support, MIME types, compression and actual headers. The host must remove or deny old
   development files already on the server; a clean local package does not remove them.
-- **Netlify form receiver, only after architecture approval:** `netlify.toml` now builds/checks the site and
-  publishes `dist`, with the existing 404 fallback preserved. This is not evidence that the
-  live domain uses Netlify. `deployment/netlify-headers.example` is optional host guidance.
-  If enabled, configure headers in Netlify rather than adding unchecked files to `dist/`.
+- **Netlify form receiver:** `netlify.toml` builds/checks the site and publishes `dist`,
+  preserving the existing 404 fallback. `/enquiry.html` accepts same-origin form submissions
+  and allows framing by the two primary domain variants through its Content Security Policy.
+  `deployment/netlify-headers.example` is optional guidance; do not apply frame-blocking
+  headers to the receiver. See `CONTACT-FORM.md` for actual dashboard checks.
 - HTML and the manifest should revalidate; fingerprinted assets can have long immutable
   caching. During a real rollout retain prior hashed assets until cached HTML expires,
   or use an atomic release switch. Never apply immutable caching to all unversioned files.
@@ -167,8 +169,8 @@ and publish directory `dist`; `package.json` pins pnpm. Do not override publicat
 the repository root. A push may trigger a Netlify deployment when continuous deployment
 is enabled. Confirm the connected repository, build settings and deploy result in Netlify.
 
-**The current contact form remains disabled pending integration verification.** A source
-push or successful build does not enable form submissions, configure notification
+**The homepage embeds the Netlify-hosted enquiry form.** A source
+push or successful build does not configure notification
 recipients, or prove inbox delivery. See `CONTACT-FORM.md` for the remaining release gates.
 The notification recipient belongs in the Netlify dashboard, not public source code.
 
@@ -180,14 +182,15 @@ and run `pnpm validate` on pull requests/releases. No Actions workflow is config
 
 - [ ] Owner approves restrained positioning, property facts, legal draft and form backend.
 - [ ] Gallery descriptions/order are correct; Room 3 shows its renovation placeholder without photographs.
-- [ ] `pnpm validate` passes; preview Home, Gallery, Policies, Privacy and 404.
+- [ ] `pnpm validate` passes; preview Home, Gallery, Policies, Privacy, Enquiry and 404.
 - [ ] Check desktop/mobile menu, lightbox, gallery without JS and contact validation without sending.
 - [ ] Inspect `dist/`; include required approved public/host resources and nothing private.
 - [ ] Host confirms document root, 404 behavior, MIME types, caching and development-file denial.
 - [ ] Owner authorizes deployment and performs live checks/rollback preparation separately.
 
 See `MAINTENANCE.md` for this refactor's verification record and `PERFORMANCE.md` for
-historical performance measurements and media details. No deployment was performed.
+historical performance measurements and media details. Live release verification is separate
+from those historical records.
 
 Tool/hosting references: [HTML Validate](https://html-validate.org/usage/),
 [Playwright accessibility testing](https://playwright.dev/docs/accessibility-testing),

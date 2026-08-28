@@ -35,7 +35,7 @@
                     <section class="policy-section">
                         <h2 class="sr-only">Privacy Policy details</h2>
                         <p><strong>Effective date:</strong> 26 August 2026<br>
-                            <strong>Last updated:</strong> 27 August 2026
+                            <strong>Last updated:</strong> 28 August 2026
                         </p>
                         <p>This is a plain-language operational draft. It describes the website configuration visible in
                             the source code and the privacy practices the guesthouse should follow. It is not legal advice,
@@ -66,9 +66,7 @@
                             check-in and check-out dates, and an optional message. It also records that the required privacy
                             consent checkbox was selected. Please do not include identity numbers, card details, health
                             information or other sensitive information in the message field.</p>
-                        <p>Online submission is currently disabled while the connection from the planned Afrihost-hosted
-                            website to Netlify Forms is being configured and verified. This version does not send the
-                            completed form to either service. You can still use the separate contact details.</p>
+                        <p>The enquiry form is hosted by Netlify and embedded in the website. Loading it sends technical request details to Netlify. When you submit, the form sends your enquiry directly to Netlify Forms, including when the surrounding website is hosted by Afrihost. The surrounding page receives only a height measurement to size the form, not the contents of your enquiry.</p>
                         <h3 class="policy-subtitle">Bookings and payments</h3>
                         <p>Booking links direct you to NightsBridge. NightsBridge states that its booking services store
                             booking information for accommodation providers and may pass transaction information to a
@@ -127,23 +125,19 @@
                                             such as IP addresses and requested files. Hosting alone does not send enquiries
                                             to Netlify Forms.</td>
                                         <td>The live hosting account, server logs and retention, processing locations, and
-                                            whether an approved submission relay will process enquiry data.</td>
+                                            its current service terms. No Afrihost submission relay is used.</td>
                                     </tr>
                                     <tr>
                                         <td>Netlify Forms</td>
-                                        <td>The intended enquiry processor, not yet connected in this version. Once
-                                            enabled, it will receive the contact fields and consent described above, store
-                                            submissions and filter spam, including through its Akismet integration.
+                                        <td>Hosts the enquiry page and processes the form. It receives the contact fields and consent described above, stores
+                                            submissions and filters spam, including through its Akismet integration.
                                             A hidden honeypot field helps identify automated submissions.</td>
-                                        <td>The approved connection, Netlify project, account access, retention, processing
-                                            locations and current provider terms. Live acceptance has not been verified.</td>
+                                        <td>Account access, retention, processing locations and current provider terms. Receipt of an enquiry does not itself confirm email delivery.</td>
                                     </tr>
                                     <tr>
-                                        <td>Enquiry email service</td>
-                                        <td>If configured, Netlify notification emails contain enquiry information and
-                                            create a separate copy in the selected mailbox.</td>
-                                        <td>The destination inbox, email provider, recipients, forwarding rules, access,
-                                            deletion and backups. Notification delivery has not been verified.</td>
+                                        <td>Gmail (Google)</td>
+                                        <td>Netlify email notifications are configured for the guesthouse's designated Gmail inbox. They contain enquiry information and create a separate mailbox copy.</td>
+                                        <td>Authorised recipients, forwarding rules, access, deletion, backups and processing locations. Delivery may be affected by email filtering.</td>
                                     </tr>
                                     <tr>
                                         <td>GitHub</td>
@@ -207,7 +201,7 @@
                         <p>The retention period and deletion schedule for enquiries have not yet been confirmed by the
                             owner. This includes Netlify submissions, notification emails, forwarded or exported copies,
                             server logs and backups. No automatic deletion schedule has been implemented by this form.</p>
-                        <p>Before enabling submissions, the owner should confirm how long each copy is kept, who reviews
+                        <p>The owner should confirm how long each copy is kept, who reviews
                             and deletes it, and what changes when an enquiry becomes a booking. Removing a submission
                             from Netlify does not remove the separate email copies. Provider backup arrangements also
                             need confirmation. Contact the guesthouse for its current retention arrangements.</p>
