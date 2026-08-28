@@ -1,0 +1,23 @@
+# Local Netlify folder
+.netlify
+node_modules/
+dist/
+.performance/
+assets/optimized/*.source
+assets/video-poster.jpg.source
+# Local evidence, test reports, editor/OS state and credentials
+.maintenance/
+test-results/
+playwright-report/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.pnpm-store/
+*.swp

@@ -1,0 +1,11 @@
+# OPTIONAL NETLIFY GUIDANCE ONLY. Merge through the confirmed host configuration.
+# Do not deploy the project root. All files in these dist asset folders are hashed.
+/*
+  Cache-Control: no-cache
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+# Preserve required revalidation for HTML and asset-manifest.json.

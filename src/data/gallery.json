@@ -1,0 +1,385 @@
+[
+  {
+    "id": "exterior",
+    "title": "Exterior & Property",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/exterior/property-exterior-001.jpg",
+        "alt": "Guesthouse and front boundary wall viewed from across the road"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-01.jpg",
+        "alt": "Guesthouse facade and courtyard beneath a tiled roof"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-02.jpg",
+        "alt": "Angled view of guest room entrances and windows"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-03.jpg",
+        "alt": "Guesthouse exterior with shaded courtyard"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-04.jpg",
+        "alt": "Guest room entrances beside the paved courtyard"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-05.jpg",
+        "alt": "Wide view of the paved courtyard and accommodation building"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-06.jpg",
+        "alt": "Courtyard-facing rooms with individual entrances"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-07.jpg",
+        "alt": "Side view of the accommodation buildings and open courtyard"
+      },
+      {
+        "src": "assets/images/exterior/property-exterior-08.jpg",
+        "alt": "Guesthouse buildings around the open courtyard"
+      }
+    ]
+  },
+  {
+    "id": "room1",
+    "title": "Room 1",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 1/property-room-01-01.jpg",
+        "alt": "Room 1: Bed with white linen and a mustard throw beside an armchair"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-02.jpg",
+        "alt": "Room 1: Bedroom looking towards the open entrance and curtains"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-03.jpg",
+        "alt": "Room 1: Bed and bedside table beside the curtained entrance"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-04.jpg",
+        "alt": "Room 1: Bed with white pillows, mustard throw and armchair"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-05.jpg",
+        "alt": "Room 1: Kitchenette, television and refrigerator viewed from the bed"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-06.jpg",
+        "alt": "Room 1: Kitchenette, refrigerator and desk beneath the television"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-07.jpg",
+        "alt": "Room 1: Bedroom entrance and kitchenette viewed along the tiled floor"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-08.jpg",
+        "alt": "Room 1: Wooden wardrobe with open shelving"
+      },
+      {
+        "src": "assets/images/room 1/property-room-01-09.jpg",
+        "alt": "Room 1: Bathroom with freestanding bath, basin, toilet and glass shower"
+      }
+    ]
+  },
+  {
+    "id": "room2",
+    "title": "Room 2",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 2/property-room-02-01.jpg",
+        "alt": "Room 2: Bed and armchair beside the entrance and curtains"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-02.jpg",
+        "alt": "Room 2: Bed with white pillows and a mustard throw"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-03.jpg",
+        "alt": "Room 2: Bedroom viewed towards the doorway and armchair"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-04.jpg",
+        "alt": "Room 2: Television, refrigerator, microwave and kettle"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-05.jpg",
+        "alt": "Room 2: Bed beside grey curtains and a bedside table"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-06.jpg",
+        "alt": "Room 2: Angled view of the bed and bedside tables"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-07.jpg",
+        "alt": "Room 2: Television and kitchenette appliances against the bedroom wall"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-08.jpg",
+        "alt": "Room 2: Bathroom with toilet and glass shower enclosure"
+      },
+      {
+        "src": "assets/images/room 2/property-room-02-09.jpg",
+        "alt": "Room 2: Basin beside the glass shower enclosure"
+      }
+    ]
+  },
+  {
+    "id": "room3",
+    "title": "Room 3",
+    "status": "renovation",
+    "note": "Show a placeholder during renovation. Owner approval is required before adding photographs; bookability is managed only by NightsBridge.",
+    "photos": []
+  },
+  {
+    "id": "room4",
+    "title": "Room 4",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 4/property-room-04-01.jpg",
+        "alt": "Room 4: Kitchenette, refrigerator, television and desk near the doorway"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-02.jpg",
+        "alt": "Room 4: Kitchenette with sink and microwave beside the desk"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-03.jpg",
+        "alt": "Room 4: Bedroom doorway facing the bathroom"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-04.jpg",
+        "alt": "Room 4: Bed against a dark accent wall beneath pendant lights"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-05.jpg",
+        "alt": "Room 4: Bed and bedside tables beneath green pendant lights"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-06.jpg",
+        "alt": "Room 4: Wardrobe beside the bathroom doorway"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-07.jpg",
+        "alt": "Room 4: Bathroom vanity and toilet beneath a window"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-08.jpg",
+        "alt": "Room 4: Basin and mirror beside the patterned shower curtain"
+      },
+      {
+        "src": "assets/images/room 4/property-room-04-09.jpg",
+        "alt": "Room 4: Bed and window viewed through the bedroom opening"
+      }
+    ]
+  },
+  {
+    "id": "room5",
+    "title": "Room 5",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 5/property-room-05-01.jpg",
+        "alt": "Room 5: Living area with television and desk outside the bedrooms"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-02.jpg",
+        "alt": "Room 5: Kitchenette and red refrigerator along the passage"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-03.jpg",
+        "alt": "Room 5: Black sofa beside the red refrigerator"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-04.jpg",
+        "alt": "Room 5: Kitchenette with wooden cabinets and sink"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-05.jpg",
+        "alt": "Room 5: Bedroom doorways beside the kitchenette"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-06.jpg",
+        "alt": "Room 5: Two beds with white linen and mustard throws"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-07.jpg",
+        "alt": "Room 5: Two beds beneath pink pendant lights"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-08.jpg",
+        "alt": "Room 5: Angled view of the two beds and shared bedside table"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-09.jpg",
+        "alt": "Room 5: Two beds viewed from above the shared bedside table"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-10.jpg",
+        "alt": "Room 5: Wardrobe and doorway into the living area"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-11.jpg",
+        "alt": "Room 5: Double bed beside the window and curtains"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-12.jpg",
+        "alt": "Room 5: Double bed against a dark accent wall"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-13.jpg",
+        "alt": "Room 5: Bed with white pillows and bedside tables"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-14.jpg",
+        "alt": "Room 5: Angled view of the double bed and wooden headboard"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-15.jpg",
+        "alt": "Room 5: Bed viewed towards the living area doorway"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-16.jpg",
+        "alt": "Room 5: Bathroom vanity beside a patterned shower curtain"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-17.jpg",
+        "alt": "Room 5: Bathroom basin, vanity and toilet"
+      },
+      {
+        "src": "assets/images/room 5/property-room-05-18.jpg",
+        "alt": "Room 5: Bathroom with glass shower enclosure and basin"
+      }
+    ]
+  },
+  {
+    "id": "room6",
+    "title": "Room 6",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 6/property-room-06-01.jpg",
+        "alt": "Room 6: View through the Room 6 entrance towards two beds"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-02.jpg",
+        "alt": "Room 6: Two beds beside green curtains beneath pendant lights"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-03.jpg",
+        "alt": "Room 6: Kitchenette and television viewed from the beds"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-04.jpg",
+        "alt": "Room 6: Refrigerator, television and desk beside the bathroom doorway"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-05.jpg",
+        "alt": "Room 6: Bedroom looking towards the entrance and kitchenette"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-06.jpg",
+        "alt": "Room 6: Glass shower enclosure beside the bathroom mirror"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-07.jpg",
+        "alt": "Room 6: Kitchenette with sink, microwave, red refrigerator and desk"
+      },
+      {
+        "src": "assets/images/room 6/property-room-06-08.jpg",
+        "alt": "Room 6: Illuminated bathroom mirror above the basin"
+      }
+    ]
+  },
+  {
+    "id": "room7",
+    "title": "Room 7",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 7/property-room-07-01.jpg",
+        "alt": "Room 7: Bedroom with green curtains and kitchenette near the entrance"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-02.jpg",
+        "alt": "Room 7: Bed beside the kitchenette and bathroom doorway"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-03.jpg",
+        "alt": "Room 7: Bed with white pillows and mustard throw viewed from above"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-04.jpg",
+        "alt": "Room 7: Bed and wooden headboard beneath green pendant lights"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-05.jpg",
+        "alt": "Room 7: Red refrigerator beside the kitchenette counter"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-06.jpg",
+        "alt": "Room 7: Kitchenette with sink, cabinets and refrigerator"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-07.jpg",
+        "alt": "Room 7: Bathroom basin beneath a round mirror"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-08.jpg",
+        "alt": "Room 7: Toilet beneath the bathroom window"
+      },
+      {
+        "src": "assets/images/room 7/property-room-07-09.jpg",
+        "alt": "Room 7: Bathroom passage with basin and glass shower enclosure"
+      }
+    ]
+  },
+  {
+    "id": "room8",
+    "title": "Room 8",
+    "status": "visible",
+    "photos": [
+      {
+        "src": "assets/images/room 8/property-room-08-01.jpg",
+        "alt": "Room 8: Bedroom and kitchenette viewed from the doorway"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-02.jpg",
+        "alt": "Room 8: Bed beside the television, desk and bathroom doorway"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-03.jpg",
+        "alt": "Room 8: Kitchenette and bed beside green curtains"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-04.jpg",
+        "alt": "Room 8: Bed and wooden headboard against a dark wall"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-05.jpg",
+        "alt": "Room 8: Television, desk and red refrigerator opposite the bed"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-06.jpg",
+        "alt": "Room 8: Kitchenette counter with sink, kettle and refrigerator"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-07.jpg",
+        "alt": "Room 8: Bathroom vanity beneath a round mirror"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-08.jpg",
+        "alt": "Room 8: Toilet beneath the bathroom window beside the basin"
+      },
+      {
+        "src": "assets/images/room 8/property-room-08-09.jpg",
+        "alt": "Room 8: Glass shower enclosure and basin in the bathroom"
+      }
+    ]
+  }
+]

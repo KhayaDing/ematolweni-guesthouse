@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - EMatolweni Guesthouse</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery-sections.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Nunito:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/images/logos/brownlogo-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+</head>
+
+<body>
+    <header class="site-header">
+        {{header}}
+
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <img class="gallery-hero-image" alt="" src="assets/images/hero/gallery-hero.jpg">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Gallery &amp; Collections</h1>
+                <p class="hero-subtitle">Immerse yourself in the tranquility and elegance of EMatolweni Guesthouse.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section bg-cream">
+            <div class="container">
+                <aside class="gallery-booking-info" aria-labelledby="gallery-booking-title">
+                    <div class="gallery-booking-copy">
+                        <h2 id="gallery-booking-title">Browse first, then book live</h2>
+                        <p>Browse our accommodation and property gallery below. For current room availability, live rates
+                            and complete booking details, continue to our secure NightsBridge booking system.</p>
+                        <p class="gallery-booking-note">Rates and availability are updated live on NightsBridge.</p>
+                    </div>
+                    <a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary gallery-booking-cta">Check Live Rates &amp;
+                        Availability</a>
+                </aside>
+
+                {{gallery}}
+            </div>
+        </section>
+    </main>
+
+    {{footer}}
+
+    <a href="https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge."
+        class="whatsapp-float" title="Ask Us on WhatsApp" aria-label="Ask EMatolweni Guesthouse a question on WhatsApp">
+        <img src="assets/icons/whatsapp.svg" alt="" aria-hidden="true" class="wa-icon-img"
+            loading="lazy" width="512" height="513" decoding="async">
+    </a>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Enhanced Lightbox Modal -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Gallery photo viewer" aria-hidden="true" inert>
+        <button type="button" class="close-modal" aria-label="Close photo viewer">&times;</button>
+        <button type="button" class="lightbox-nav prev" aria-label="Previous Image">&#10094;</button>
+        <button type="button" class="lightbox-nav next" aria-label="Next Image">&#10095;</button>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="img01" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Gallery View" width="1600" height="1200" decoding="async">
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

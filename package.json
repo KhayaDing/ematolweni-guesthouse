@@ -1,0 +1,32 @@
+{
+  "name": "ematolweni-static-site",
+  "private": true,
+  "scripts": {
+    "media": "node scripts/optimize-media.cjs",
+    "build": "node scripts/build.cjs",
+    "preview": "node scripts/preview.cjs dist 8080",
+    "check:html": "html-validate \"dist/*.html\"",
+    "check:links": "node scripts/verify-site.cjs",
+    "check:js": "node scripts/check-js.cjs",
+    "check": "pnpm check:html && pnpm check:links && pnpm check:js",
+    "test:unit": "node scripts/test-loading.cjs",
+    "test:build": "node scripts/verify-build.cjs",
+    "test:media": "node scripts/verify-media.cjs",
+    "test:browser": "playwright test",
+    "test": "pnpm check && pnpm test:unit && pnpm test:build && pnpm test:media && pnpm test:browser",
+    "validate": "pnpm build && pnpm test",
+    "audit": "node scripts/audit.cjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "ffmpeg-static": "5.3.0",
+    "html-validate": "11.10.0",
+    "lighthouse": "12.8.2",
+    "sharp": "0.34.5"
+  },
+  "engines": {
+    "node": ">=24.8.0"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

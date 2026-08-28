@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMatolweni Guesthouse</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Nunito:wght@300;400;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/images/logos/brownlogo-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+</head>
+
+<body>
+  <header class="site-header">
+    {{header}}
+
+    <section id="hero" class="hero">
+      <div class="hero-slider">
+        <div class="hero-slide active" data-slide="1">
+          <div class="hero-overlay"></div>
+          <img alt="Guesthouse bedroom" class="hero-image" src="assets/images/hero/hero-1.jpg">
+          <div class="hero-content">
+            <p class="hero-kicker">WELCOME TO</p>
+            <h1>EMatolweni Guesthouse</h1>
+            <p class="hero-subtitle">Experience refined comfort, modern amenities, and warm South African hospitality in
+              Kimberley.</p>
+            <div class="hero-buttons">
+              <a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank" rel="noopener noreferrer" class="btn-primary">Check Live Rates &amp; Availability</a>
+              <a href="gallery.html" class="btn-ghost">View Gallery</a>
+            </div>
+            <div class="hero-amenities">
+              <span class="hero-amenity-pill"><i class="fas fa-bolt" aria-hidden="true"></i> No Load Shedding</span>
+              <span class="hero-amenity-pill"><i class="fas fa-wifi" aria-hidden="true"></i> Free WiFi</span>
+              <span class="hero-amenity-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> Secure Parking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" data-slide="2" aria-hidden="true" inert>
+          <div class="hero-overlay"></div>
+          <img alt="Guesthouse lounge" class="hero-image" src="assets/images/hero/hero-2.jpg">
+          <div class="hero-content">
+            <p class="hero-kicker">COMFORT &amp; CONVENIENCE</p>
+            <h2>Stay in the Heart of Kimberley</h2>
+            <p class="hero-subtitle">
+              Enjoy our modern rooms, backup water systems, and exceptional personalized service.
+            </p>
+            <div class="hero-buttons">
+              <a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank" rel="noopener noreferrer" class="btn-primary">Check Live Rates &amp; Availability</a>
+              <a href="gallery.html" class="btn-ghost">View Gallery</a>
+            </div>
+            <div class="hero-amenities">
+              <span class="hero-amenity-pill"><i class="fas fa-faucet" aria-hidden="true"></i> Backup Water</span>
+              <span class="hero-amenity-pill"><i class="fas fa-snowflake" aria-hidden="true"></i> Air Conditioning</span>
+              <span class="hero-amenity-pill"><i class="fas fa-tv" aria-hidden="true"></i> Smart TV</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" data-slide="3" aria-hidden="true" inert>
+          <div class="hero-overlay"></div>
+          <img alt="Serene Atmosphere" class="hero-image" src="assets/images/hero/hero-3.jpg">
+          <div class="hero-content">
+            <p class="hero-kicker">PEACEFUL RETREAT</p>
+            <h2>Experience African Elegance</h2>
+            <p class="hero-subtitle">
+              Relax in our secure, family-friendly environment designed for your ultimate peace of mind.
+            </p>
+            <div class="hero-buttons">
+              <a href="https://book.nightsbridge.com/38989?nbid=952" target="_blank" rel="noopener noreferrer" class="btn-primary">Check Live Rates &amp; Availability</a>
+              <a href="gallery.html" class="btn-ghost">View Gallery</a>
+            </div>
+            <div class="hero-amenities">
+              <span class="hero-amenity-pill"><i class="fas fa-user-friends" aria-hidden="true"></i> Family Friendly</span>
+              <span class="hero-amenity-pill"><i class="fas fa-bath" aria-hidden="true"></i> En-suite Bathrooms</span>
+              <span class="hero-amenity-pill"><i class="fas fa-utensils" aria-hidden="true"></i> Self Catering</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button type="button" class="hero-arrow hero-arrow-right" aria-label="Next slide">
+          &#10095;
+        </button>
+
+        <div class="hero-dots">
+          <button type="button" class="hero-dot active" data-target="1" aria-label="Show slide 1"></button>
+          <button type="button" class="hero-dot" data-target="2" aria-label="Show slide 2"></button>
+          <button type="button" class="hero-dot" data-target="3" aria-label="Show slide 3"></button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <!-- Video/Image Showcase Component -->
+        <div class="video-container">
+          <!-- Badge -->
+          <div class="hosting-badge">
+            1 YEAR + HOSTING
+          </div>
+
+          <!-- Main Video/Image -->
+          <div class="main-media">
+            <video id="about-video" width="640" height="480" muted loop playsinline preload="none"
+              poster="assets/optimized/video-poster-480.jpg" data-src="assets/videos/about-video.mp4"
+              controls tabindex="0" aria-label="EMatolweni Guesthouse video tour">
+              Your browser does not support embedded video. <a href="assets/videos/about-video.mp4">Watch the video tour</a>.
+            </video>
+            <button id="video-play" class="video-play" type="button" aria-controls="about-video" hidden>
+              <span aria-hidden="true">&#9654;</span> Play video tour
+            </button>
+            <noscript><a class="video-play" href="assets/videos/about-video.mp4">Play video tour</a></noscript>
+          </div>
+
+          <!-- Overlapping Secondary Image -->
+          <div class="secondary-media">
+            <img alt="Interior Detail" src="assets/images/amenities/about-image.jpg">
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>About EMatolweni Guesthouse</h2>
+          <p class="lead">
+            Welcome to EMatolweni Guesthouse, offering comfortable self-catering accommodation in Kimberley, South Africa.
+            Our guesthouse combines African character with modern comforts and warm hospitality.
+          </p>
+          <p>
+            Whether you are visiting for business or pleasure, our dedicated
+            team ensures your stay is comfortable, secure, and memorable,
+            offering personalized service that reflects the warmth of African
+            hospitality.
+          </p>
+          <ul class="about-list">
+            <li>Centrally located in Kimberley</li>
+            <li>No Load Shedding (Mining Grid)</li>
+            <li>Water Tank Backup System</li>
+            <li>Secure Gated Property &amp; ADT</li>
+            <li>Family-Owned &amp; Managed</li>
+            <li>Self-catering accommodation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="section why-choose">
+      <div class="container">
+        <header class="section-header">
+          <h2>Why Choose Ematolweni</h2>
+          <p>Practical features for a comfortable stay.</p>
+        </header>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bolt" aria-hidden="true"></i>
+            </div>
+            <h3>No Load Shedding</h3>
+            <p>We are situated on a mining grid, ensuring uninterrupted power supply 24/7.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-faucet" aria-hidden="true"></i>
+            </div>
+            <h3>Backup Water</h3>
+            <p>Continuous water supply available, so your comfort is never compromised.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <h3>Secure Parking</h3>
+            <p>Complimentary, secure on-site parking available 24/7 for peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="amenities" class="section amenities">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Amenities</h2>
+          <p>
+            Enjoy a range of premium amenities designed to make your stay
+            comfortable, convenient, and stress-free.
+          </p>
+        </header>
+
+
+        <div class="amenities-grid">
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img alt="Free High-Speed WiFi" src="assets/images/amenities/free-wifi-guesthouse-720.jpg">
+
+            </div>
+            <div class="service-body">
+              <h3>Free High-Speed WiFi</h3>
+              <p>
+                Stay connected with complimentary high-speed WiFi available
+                throughout the property, perfect for work or streaming.
+              </p>
+            </div>
+          </article>
+
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img alt="Smart TV entertainment" src="assets/images/amenities/smart_tv_entertainment.png">
+            </div>
+            <div class="service-body">
+              <h3>Smart TV &amp; Entertainment</h3>
+              <p>
+                Relax in your room with a Smart TV, offering access to your
+                favorite streaming services and entertainment channels.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img alt="Self-catering and climate control" src="assets/images/amenities/self_catering_climate_control-720.jpg">
+            </div>
+            <div class="service-body">
+              <h3>Self-Catering &amp; Climate Control</h3>
+              <p>
+                Each room features a mini kitchen with basic utensils, plus air conditioning and heating for your
+                personalized comfort.
+              </p>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section-header">
+          <h2>Get In Touch</h2>
+          <p>
+            We would love to hear from you. Send us a message and we will
+            respond as soon as possible.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+27785926801" class="contact-value contact-social-link">+27 (78) 592 6801</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">Enquiries</span>
+                  <a href="https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge."
+                    class="contact-value contact-social-link" aria-label="Ask EMatolweni Guesthouse a question on WhatsApp">Ask Us on WhatsApp</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">info@ematolweniguesthouse.co.za</span>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="fas fa-location-dot"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">Location</span>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=56+Boshof+Road,+Ernestville,+Kimberley,+Northern+Cape,+8301"
+                    class="contact-value contact-social-link" target="_blank" rel="noopener noreferrer">56 Boshof Road, Ernestville, Kimberley, Northern Cape, 8301</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="fab fa-facebook-f"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">Facebook</span>
+                  <a href="https://www.facebook.com/people/EMatolweni-Guesthouse/61583854855520/" target="_blank" rel="noopener noreferrer" class="contact-value contact-social-link">EMatolweni Guesthouse</a>
+                </span>
+              </li>
+            </ul>
+            <div class="map-placeholder">
+              <iframe title="EMatolweni Location"
+                src="https://maps.google.com/maps?q=56+Boshof+Road,+Ernestville,+Kimberley,+Northern+Cape,+8301&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <form class="contact-form" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-submission-enabled="false">
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden>
+              <label>Leave this field empty: <input type="text" name="bot-field" autocomplete="off" tabindex="-1"></label>
+            </p>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" autocomplete="given-name" required>
+              </div>
+              <div class="form-field">
+                <label for="surname">Surname *</label>
+                <input type="text" id="surname" name="surname" placeholder="Doe" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 123 456 789" autocomplete="tel" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="checkIn">Check-in *</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+              </div>
+              <div class="form-field">
+                <label for="checkOut">Check-out *</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Tell us about your booking requirements or any questions you have..."></textarea>
+            </div>
+
+            <div class="consent-field">
+              <input type="checkbox" id="privacyConsent" name="privacyConsent" value="consented" required
+                aria-describedby="privacy-notice consent-error">
+              <label for="privacyConsent">I have read the <a href="privacy.html">Privacy Policy</a> and consent to
+                EMatolweni Guesthouse using my information to respond to this enquiry.</label>
+            </div>
+            <p id="consent-error" class="consent-validation" role="alert" aria-live="polite" hidden>
+              Please select the consent checkbox before sending your enquiry.
+            </p>
+            <p id="privacy-notice" class="form-privacy-notice">
+              We ask for your name, email, phone number, stay dates, optional message and consent to answer your enquiry
+              and assist with booking requirements. Afrihost will host this website; Netlify Forms is the intended
+              enquiry processor. Online submission is currently unavailable while that connection is being configured.
+              Please use the contact details alongside this form. Read our <a href="privacy.html">Privacy Policy</a> for details.
+            </p>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary full-width" disabled aria-describedby="privacy-notice">
+                Send Message
+              </button>
+            </div>
+            <div id="form-success" class="form-success" role="status" aria-live="polite" style="display: none;">
+              Thank you. The submission service accepted your enquiry. This does not confirm email delivery or a booking.
+            </div>
+            <div id="form-error" class="form-error" role="alert" aria-live="assertive" style="display: none;">
+              We could not confirm acceptance of your enquiry. Please contact us directly before retrying to avoid duplicates.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Area Attractions -->
+    <section id="attractions" class="section bg-white">
+      <div class="container">
+        <header class="section-header">
+          <h2>Area Attractions</h2>
+          <p>Explore the best of Kimberley during your stay.</p>
+        </header>
+        <div class="amenities-grid attractions-grid">
+          <article class="service-card attraction-card">
+            <div class="service-image">
+              <img alt="McGregor Museum in Kimberley" src="assets/images/attractions/mcgregor-museum.jpg">
+              <span class="attraction-distance"><i class="fas fa-location-dot" aria-hidden="true"></i> 0.8 km from us</span>
+            </div>
+            <div class="service-body">
+              <h3><a href="https://www.sa-venues.com/things-to-do/northerncape/visit-the-mcgregor-museum/" target="_blank" rel="noopener noreferrer">McGregor Museum <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+              <p class="attraction-description">Explore the Northern Cape's natural and cultural history in one of Kimberley's landmark heritage buildings.</p>
+              <a class="attraction-cta" href="https://www.sa-venues.com/things-to-do/northerncape/visit-the-mcgregor-museum/" target="_blank" rel="noopener noreferrer">View museum details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="service-card attraction-card">
+            <div class="service-image">
+              <img alt="Entrance to the William Humphreys Art Gallery in Kimberley" src="assets/images/attractions/whag.jpg">
+              <span class="attraction-distance"><i class="fas fa-location-dot" aria-hidden="true"></i> 1.4 km from us</span>
+            </div>
+            <div class="service-body">
+              <h3><a href="https://whag.co.za/" target="_blank" rel="noopener noreferrer">William Humphreys Art Gallery (WHAG) <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+              <p class="attraction-description">Explore South African and international art at Kimberley's national art museum in Oppenheimer Gardens.</p>
+              <a class="attraction-cta" href="https://whag.co.za/" target="_blank" rel="noopener noreferrer">Visit official website <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="service-card attraction-card">
+            <div class="service-image">
+              <img alt="The Big Hole diamond mine in Kimberley" src="assets/images/attractions/the-big-hole.jpg">
+              <span class="attraction-distance"><i class="fas fa-location-dot" aria-hidden="true"></i> 2.7 km from us</span>
+            </div>
+            <div class="service-body">
+              <h3><a href="https://thebighole.com/" target="_blank" rel="noopener noreferrer">The Big Hole <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+              <p class="attraction-description">Step into Kimberley's diamond-rush story at the iconic mine, visitor centre and historic Old Town.</p>
+              <a class="attraction-cta" href="https://thebighole.com/" target="_blank" rel="noopener noreferrer">Visit official website <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section (Trust Badges) -->
+    <section class="partners-section">
+      <div class="container">
+        <h2 class="partners-title">Book via Our Trusted Partners</h2>
+        <div class="partners-grid">
+
+          <!-- Booking.com -->
+          <a href="https://www.booking.com/hotel/za/ematolweni-guesthouse.html" target="_blank" rel="noopener noreferrer" class="partner-card" aria-label="Book on Booking.com">
+            <img src="assets/images/trusted-partners/booking.svg" alt="Booking.com" class="partner-logo" width="160" height="28" loading="lazy" decoding="async">
+          </a>
+
+          <!-- Airbnb -->
+          <a href="https://www.airbnb.co.za/users/profile/1470664265986550301?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener noreferrer" class="partner-card" aria-label="Book on Airbnb">
+            <img src="assets/images/trusted-partners/airbnb.svg" alt="Airbnb" class="partner-logo" width="130" height="40" loading="lazy" decoding="async">
+          </a>
+
+          <!-- LekkeSlaap -->
+          <a href="https://www.lekkeslaap.co.za/akkommodasie/ematolweni-guesthouse" target="_blank" rel="noopener noreferrer" class="partner-card" aria-label="Book on LekkeSlaap">
+            <img src="assets/images/trusted-partners/lekkeslaap.svg" alt="LekkeSlaap" class="partner-logo" width="160" height="48" loading="lazy" decoding="async">
+          </a>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  {{footer}}
+
+  <a href="https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge." class="whatsapp-float" title="Ask Us on WhatsApp" aria-label="Ask EMatolweni Guesthouse a question on WhatsApp">
+    <img src="assets/icons/whatsapp.svg" alt="" aria-hidden="true" class="wa-icon-img"
+      loading="lazy" width="512" height="513" decoding="async">
+  </a>
+
+  <button type="button" id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+{
+  "index.html": {
+    "destinations": [
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge.",
+      "https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge.",
+      "tel:+27785926801",
+      "tel:+27785926801",
+      "tel:+27785926801"
+    ],
+    "forms": [
+      "<form class=\"contact-form\" name=\"contact\" method=\"POST\" action=\"/\" data-netlify=\"true\" netlify-honeypot=\"bot-field\" data-submission-enabled=\"false\">"
+    ]
+  },
+  "gallery.html": {
+    "destinations": [
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge.",
+      "tel:+27785926801",
+      "tel:+27785926801"
+    ],
+    "forms": []
+  },
+  "policies.html": {
+    "destinations": [
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge.",
+      "tel:+27785926801",
+      "tel:+27785926801"
+    ],
+    "forms": []
+  },
+  "privacy.html": {
+    "destinations": [
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://wa.me/27785926801?text=Hi%20EMatolweni%20Guesthouse%2C%20I%20have%20a%20question%20about%20accommodation%20before%20booking%20on%20NightsBridge.",
+      "mailto:POPIAComplaints@inforegulator.org.za",
+      "mailto:info@ematolweniguesthouse.co.za",
+      "mailto:info@ematolweniguesthouse.co.za",
+      "mailto:info@ematolweniguesthouse.co.za",
+      "mailto:info@ematolweniguesthouse.co.za",
+      "tel:+27785926801",
+      "tel:+27785926801",
+      "tel:+27785926801",
+      "tel:+27785926801"
+    ],
+    "forms": []
+  },
+  "404.html": {
+    "destinations": [
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "https://book.nightsbridge.com/38989?nbid=952",
+      "tel:+27785926801",
+      "tel:+27785926801"
+    ],
+    "forms": []
+  }
+}
